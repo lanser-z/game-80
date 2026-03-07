@@ -1,0 +1,19 @@
+{
+  "name": "game-80",
+  "version": "1.0.0",
+  "description": "一款使用 Phaser 3 开发的益智解谜游戏，支持发布到微信、抖音、支付宝小游戏平台。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.58.2"
+  }
+}

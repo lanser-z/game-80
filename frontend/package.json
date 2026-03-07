@@ -1,0 +1,21 @@
+{
+  "name": "game-80-frontend",
+  "version": "1.0.0",
+  "description": "八十！八十！砸墙游戏 - Phaser 3 前端",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:wechat": "tsc && vite build --mode wechat"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}
