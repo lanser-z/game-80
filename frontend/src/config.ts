@@ -1,6 +1,5 @@
-import { GameConfig } from './types';
-
-export const GAME_CONFIG: GameConfig = {
+// 游戏配置
+export const GAME_CONFIG = {
   width: 800,
   height: 600,
   blockSize: 40,
@@ -8,6 +7,14 @@ export const GAME_CONFIG: GameConfig = {
   hitCost: 80
 };
 
+// API 配置
+export const API_CONFIG = {
+  // 是否启用在线模式（调用后端 API）
+  enabled: false,
+  baseUrl: 'http://localhost:8080/api/v1'
+};
+
+// 积木块类型
 export const BLOCK_TYPES = {
   DIRT: {
     name: 'dirt',
@@ -39,6 +46,7 @@ export const BLOCK_TYPES = {
   }
 } as const;
 
+// 道具定义
 export const ITEMS = {
   HAMMER: {
     id: 'hammer',
