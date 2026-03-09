@@ -49,13 +49,23 @@ export class MenuScene extends Phaser.Scene {
     }).setOrigin(0.5);
 
     // 创建开始按钮
-    this.createButton(width / 2, height / 2 + 20, '开始游戏', 0x00aa00, () => {
+    this.createButton(width / 2 - 100, height / 2 + 20, '开始游戏', 0x00aa00, () => {
       this.startGame();
     });
 
+    // 创建商店按钮
+    this.createButton(width / 2 + 100, height / 2 + 20, '道具商店', 0xcc6600, () => {
+      this.scene.start('ShopScene');
+    });
+
     // 创建选关按钮
-    this.createButton(width / 2, height / 2 + 100, '选择关卡', 0x0066cc, () => {
+    this.createButton(width / 2 - 100, height / 2 + 100, '选择关卡', 0x0066cc, () => {
       this.showLevelSelect();
+    });
+
+    // 创建排行榜按钮
+    this.createButton(width / 2 + 100, height / 2 + 100, '排行榜', 0x9933cc, () => {
+      this.scene.start('LeaderboardScene');
     });
 
     // 创建说明文字
